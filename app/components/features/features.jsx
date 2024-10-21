@@ -12,7 +12,6 @@ export default function Features() {
                             lacus.</p>
                     </div>
                     <div id="services">
-
                         <div id="services-1" class="services">
                             <img src="images/payments.svg" alt=""></img>
                             <h1>Easy Payments</h1>
