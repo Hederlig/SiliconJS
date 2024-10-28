@@ -1,0 +1,82 @@
+#reviews {
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    #reviews {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) { 
+    #reviews {
+        display: block !important;
+        margin-top: 15rem;
+        background-color: var(--color-gray100);
+
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            h1 {
+
+                font-size: 40px;
+                font-weight: 800;
+            }
+
+            p {}
+
+            .quote {
+                position: absolute;
+                padding-left: 53rem;
+
+            }
+
+            .quote1 {
+                position: absolute;
+                padding-left: 25rem;
+            }
+
+            .users {
+                padding-top: 2rem;
+                margin-top: 2rem;
+                width: 21rem;
+
+                margin-left: 7rem;
+                background-color: var(--color-white);
+
+                .star {
+                    padding-bottom: 1rem;
+                }
+
+                .text {
+                    font-size: 18;
+
+                }
+
+                h5 {
+                    font-size: 18;
+
+                }
+
+
+                .profil {
+                    display: flex !important;
+                    flex-direction: row;
+                }
+
+                .name {
+                    font-size: 18;
+                    font-weight: 800;
+                }
+
+                .work {
+
+                    color: var(--color-gray);
+                }
+
+            }
+
+        }
+    }
+}

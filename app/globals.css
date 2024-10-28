@@ -1,10 +1,60 @@
-header .container {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --color-dark: #0B0F19;
+  --color-primary: #6366F1;
+  --color-gray: #9397AD;
+  --color-lightgray: #E2E5F1;
+  --color-white: #FFFFFF;
+  --color-gray100: #F3F6FF;
+  --container-padding: 1rem;
+  --transition-time: all 0.2s;
+}
+
+.wrapper {
   display: grid;
-  align-items: center;
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo sw mobile";
-  gap: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  justify-items: end;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body,
+section,
+div,
+header,
+footer,
+main,
+aside,
+nav,
+blockquote,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+
 }

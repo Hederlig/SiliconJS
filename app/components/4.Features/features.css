@@ -1,0 +1,156 @@
+#features {
+    .container {
+
+        .phonefeatures {
+            display: none;
+        }
+
+        .headline {
+            text-align: center;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        #services {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            h1 {
+                padding-left: 4rem;
+                font-size: 20px;
+                font-weight: 800;
+
+            }
+
+            p {
+                font-size: 16px;
+                padding-left: 4rem;
+
+            }
+
+            .services {
+                img {
+                    padding-top: 1rem;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+
+    #features {
+
+
+        .container {
+            text-align: center;
+    
+            h1 {
+                font-size: 33px !important;
+                font-weight: 800;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            .phonefeatures {
+                display: none;
+            }
+    
+            #services {
+                display: grid;
+                grid-template-columns: 1fr 1fr !important;
+                text-align: left;
+    
+    
+                h1 {
+                    padding-left: 5rem;
+                    grid-template-columns: auto !important;
+                    font-size: 20px !important;
+                }
+    
+                p {
+                    font-size: 16px !important;
+                    padding-left: 5rem;
+                    padding-right: 2rem !important;
+    
+                }
+    
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1400px) { 
+    #features {
+
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+
+            .phonefeatures {
+                grid-row: 1;
+                grid-row: 1 / span 2;
+                display: block !important;
+                width: 120%;
+                height: 120%;
+                justify-self: start !important;
+                padding-right: 20rem;
+
+            }
+
+
+            .headline {
+                grid-column: 2;
+                grid-row: 1;
+                text-align: start !important;
+
+
+                h1 {
+                    font-size: 33px !important;
+                    font-weight: 800;
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+            }
+
+            #services {
+                grid-column: 2;
+                grid-row: 2;
+                align-self: center;
+                text-align: left;
+                padding: 1rem;
+
+
+                h1 {
+                    padding-left: 5rem;
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    padding-left: 5rem;
+                    padding-right: 2rem !important;
+
+                }
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,188 @@
+#factdetail {
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    #factdetail {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) { 
+    #factdetail {
+
+        display: grid !important;
+
+
+
+        .container {
+            display: flexbox !important;
+            align-items: center !important;
+            padding-top: 5rem;
+
+
+            .upper {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+
+                .top {
+                    padding-top: 5rem;
+                }
+
+                h1 {
+                    font-weight: 800;
+                    font-size: 32px;
+
+                }
+
+                p {
+                    padding-top: 1rem;
+
+                }
+
+                .inner {
+                    position: absolute;
+                    margin-left: 250px;
+
+                }
+
+                .out {
+                    position: absolute;
+                    margin-top: 20rem;
+                    padding-left: 30rem;
+                }
+
+                .button {
+                    margin-top: 2rem;
+                    padding-top: 12rem;
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    border-radius: 8px;
+                    padding: 12px 25px;
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    border: none;
+                }
+
+                .button:hover {
+                    background-color: var(--color-gray);
+                    color: var(--color-white);
+                    text-decoration: none;
+                }
+
+                .button i {
+                    margin-right: 0.5rem;
+                    padding-left: 15px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .lower {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                margin-top: 15rem;
+
+
+                .img {
+
+                    .img-back {
+                        position: absolute;
+                    }
+
+                    .img-front {
+                        padding-top: 7rem;
+                        padding-left: 8rem;
+                        position: absolute;
+                    }
+                }
+
+
+                .payment {
+                    padding-left: 32rem;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    h1 {
+                        font-weight: 800;
+                        font-size: 32px;
+                    }
+
+                    img {
+                        width: 1.5rem;
+                    }
+
+                    .card {
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        position: absolute;
+                        margin-left: 2rem;
+
+                    }
+
+                    .wallet {
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        margin-left: 18rem;
+                        position: absolute;
+
+
+                    }
+
+                    .text {
+
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    p {
+                        padding-top: 5rem;
+                        text-align: left;
+                    }
+
+                    .textwallet {
+                        padding-left: 2rem;
+                    }
+
+                    .button {
+                        margin-top: 2rem;
+                        padding-top: 12rem;
+                        background-color: var(--color-primary);
+                        color: var(--color-white);
+                        border-radius: 8px;
+                        padding: 12px 25px;
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        border: none;
+                        width: 10rem;
+
+                    }
+
+                    .button:hover {
+                        background-color: var(--color-gray);
+                        color: var(--color-white);
+                        text-decoration: none;
+                    }
+
+                    .button i {
+                        margin-right: 0.5rem;
+                        padding-left: 15px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+}

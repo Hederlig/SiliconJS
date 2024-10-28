@@ -1,0 +1,176 @@
+#info {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .iphone2 {
+            display: none;
+        }
+
+        .iphone3 {
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        img {}
+
+        p {
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+    }
+}
+
+@media (min-width: 768px) { 
+    #info {
+
+
+        .container {
+            /* display: flex !important; */
+            flex-direction: column;
+    
+            .mobile {
+                display: none;
+            }
+    
+            .desktop {
+                display: none;
+            }
+    
+            .tablet {
+                display: block !important;
+            }
+    
+    
+            h1 {
+                text-align: center;
+                font-size: 28px;
+                font-weight: 800;
+            }
+    
+            .img {
+    
+                display: flex !important;
+                flex-direction: row !important;
+    
+                .iphone1 {
+                    height: 400px;
+                }
+    
+                .iphone2 {
+                    display: flex !important;
+                }
+    
+                .iphone3 {
+                    display: flex !important;
+                }
+    
+    
+    
+    
+            }
+    
+            p {
+                text-align: center;
+                font-size: 16px;
+    
+            }
+    
+        }
+    
+    
+    }
+}
+
+@media (min-width: 1400px) { 
+    #info {
+
+
+        .container {
+            padding-top: 85rex;
+
+            display: flexbox !important;
+            flex-direction: column !important;
+
+            .mobile {
+                display: none !important;
+            }
+
+            .desktop {
+                display: block !important;
+                padding-top: 9rem;
+            }
+
+            .tablet {
+                display: none !important;
+            }
+
+
+            h1 {
+                text-align: center;
+                font-size: 28px;
+                font-weight: 800;
+
+
+            }
+
+            .img {
+
+                display: flex !important;
+                flex-direction: row !important;
+
+
+                .iphone1 {
+                    width: 120%;
+                    height: 120%;
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                }
+
+                .iphone2 {
+                    display: flex !important;
+                    width: 120%;
+                    height: 120%;
+                }
+
+                .iphone3 {
+                    display: flex !important;
+                    width: 120%;
+                    height: 120%;
+                }
+
+
+
+
+            }
+
+            p {
+                text-align: center !important;
+                font-size: 22px !important;
+                width: 75%;
+
+
+            }
+
+        }
+
+
+    }
+
+}
