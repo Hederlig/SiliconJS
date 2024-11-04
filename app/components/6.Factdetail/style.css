@@ -1,15 +1,15 @@
-#factdetail {
+.factdetail {
     display: none;
 }
 
 @media (min-width: 768px) { 
-    #factdetail {
+    .factdetail {
         display: none;
     }
 }
 
 @media (min-width: 1400px) { 
-    #factdetail {
+    .factdetail {
 
         display: grid !important;
 

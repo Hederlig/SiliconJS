@@ -1,27 +1,27 @@
 export default function Faq() {
     return (
         <div className="Faq">
-            <div class="container">
-                <div class="info">
+            <div className="container">
+                <div className="info">
                     <h1>Any questions?<br>Check out the FAQs</br></h1>
                     <h5>Still have unanswered questions and need to get <br> in touch?</br></h5>
-                    <div class="tele">
-                        <span class="call">
+                    <div className="tele">
+                        <span className="call">
                             <img src="images/phone.svg"></img>
                             <p>Still have questions?</p>
-                            <button class="phonebtn">Contact us <i class="fa-solid fa-arrow-right"></i></button>
+                            <button className="phonebtn">Contact us <i className="fa-solid fa-arrow-right"></i></button>
                         </span>
-                        <span class="chat">
+                        <span className="chat">
                             <img src="images/chat.svg"></img>
                             <p>Don't like phone calls?</p>
-                            <button class="chatbtn">Contact us <i class="fa-solid fa-arrow-right"></i></button>
+                            <button className="chatbtn">Contact us <i className="fa-solid fa-arrow-right"></i></button>
                         </span>
                     </div>
                 </div>
-                <div class="accordion">
+                <div className="accordion">
                     <details>
                         <summary>Is any of my personal information stored in the App? <i
-                            class="fa-solid fa-chevron-down"></i></summary>
+                            className="fa-solid fa-chevron-down"></i></summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
                             velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
@@ -31,7 +31,7 @@ export default function Faq() {
                     </details>
                     <details>
                         <summary>What formats can I download my transaction history in?<i
-                            class="fa-solid fa-chevron-down"></i></summary>
+                            className="fa-solid fa-chevron-down"></i></summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
                             velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
@@ -39,7 +39,7 @@ export default function Faq() {
                             egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
                     </details>
                     <details>
-                        <summary>Can I schedule future transfers?<i class="fa-solid fa-chevron-down"></i></summary>
+                        <summary>Can I schedule future transfers?<i className="fa-solid fa-chevron-down"></i></summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
                             velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
@@ -47,7 +47,7 @@ export default function Faq() {
                             egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
                     </details>
                     <details>
-                        <summary>When can I use Banking App services?<i class="fa-solid fa-chevron-down"></i>
+                        <summary>When can I use Banking App services?<i className="fa-solid fa-chevron-down"></i>
                         </summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
@@ -57,7 +57,7 @@ export default function Faq() {
                     </details>
                     <details>
                         <summary>Can I create my own password that is easy for me to remember?<i
-                            class="fa-solid fa-chevron-down"></i></summary>
+                            className="fa-solid fa-chevron-down"></i></summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
                             velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
@@ -66,7 +66,7 @@ export default function Faq() {
                     </details>
                     <details>
                         <summary>What happens if I forget or lose my password?<i
-                            class="fa-solid fa-chevron-down"></i></summary>
+                            className="fa-solid fa-chevron-down"></i></summary>
                         <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
                             viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
                             velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem

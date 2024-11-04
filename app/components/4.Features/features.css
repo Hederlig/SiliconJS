@@ -1,4 +1,4 @@
-#features {
+.features {
     .container {
 
         .phonefeatures {
@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) { 
 
-    #features {
+    .features {
 
 
         .container {
@@ -92,7 +92,7 @@
 }
 
 @media (min-width: 1400px) { 
-    #features {
+    .features {
 
         .container {
             text-align: center;

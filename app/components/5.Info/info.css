@@ -1,4 +1,4 @@
-#info {
+.info {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 768px) { 
-    #info {
+    .info {
 
 
         .container {
@@ -99,7 +99,7 @@
 }
 
 @media (min-width: 1400px) { 
-    #info {
+    .info {
 
 
         .container {

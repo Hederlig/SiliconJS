@@ -1,4 +1,4 @@
-footer {
+.footer {
     position: fixed;
     bottom: 0;
     font-size: 14px;
@@ -17,7 +17,7 @@ footer {
         display: none;
     }
 }
-#footer {
+.footer {
     display: flex !important;
     justify-content: center;
         
@@ -28,7 +28,7 @@ footer {
 
 
 @media (min-width: 768px) { 
-    footer {
+    .footer {
 
         font-size: 14px;
     
@@ -44,7 +44,7 @@ footer {
 }
 
 @media (min-width: 1400px) { 
-    #footer {
+    .footer {
         display: flex !important;
         justify-content: center;
             

@@ -1,7 +1,7 @@
 
 
 @media (min-width: 768px) { 
-    #brands {
+    .brands {
         display: block;
     
         .container {
@@ -12,14 +12,14 @@
         }
     }
     
-    #brand-1,
-    #brand-2 {
+    .brand-1,
+    .brand-2 {
         display: none;
     }
  }
 
  @media (min-width: 1400px) { 
-    #brands {
+    .brands {
         display: flex;
         padding-top: 2rem;
         padding-bottom: 2rem;

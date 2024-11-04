@@ -1,4 +1,4 @@
-#faq {
+.faq {
     .container {
         margin-top: 5rem;
         display: flex;
@@ -102,7 +102,7 @@
 }
 
 @media (min-width: 1400px) { 
-    #faq {
+    .faq {
         .container {
             margin-top: 5rem;
             display: flex;

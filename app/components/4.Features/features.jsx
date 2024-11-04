@@ -1,7 +1,7 @@
 export default function Features() {
     return (
       <div className="Features">
-         <div class="container">
+         <div className="container">
                     <img class="phonefeatures" src="images/iphone-features.svg" alt=""></img>
                     <div class="headline">
                         <h1>App Features</h1>
