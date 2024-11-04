@@ -126,17 +126,20 @@ a:hover {
         display: none;
     }
 
-    .lable {}
+    .label {
+        display: flex;
+    }
 
 }
 
 @media (min-width: 1400px) {
-    header .container {
+    .header {
+    .container {
         grid-template-columns: auto 1fr auto auto !important;
-        gap: 3rem;
-        justify-items: start !important;
+        gap: 1rem;
+        justify-items: start ;
     }
-
+}
     .btn-primary {
         background-color: var(--color-primary);
         color: var(--color-white);
@@ -170,7 +173,11 @@ a:hover {
     .btn-mobile {
         display: none;
     }
-
+    .navlink{
+        display: grid;
+        justify-items: start;
+    
+    }
  
 
     }
