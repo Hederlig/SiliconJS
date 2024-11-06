@@ -135,6 +135,7 @@ a:hover {
 @media (min-width: 1400px) {
     .header {
     .container {
+        max-width: 1320px;
         grid-template-columns: auto 1fr auto auto !important;
         gap: 1rem;
         justify-items: start ;

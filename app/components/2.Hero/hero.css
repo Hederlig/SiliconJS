@@ -42,6 +42,10 @@
         }
 
         .discover-more {
+            .downarrow {
+                height: 1rem;
+            }
+            
             color: var(--color-dark);
             display: flex;
             align-items: center;
@@ -57,9 +61,8 @@
         display: none;
     }
 }
-
 .btn-downloadapp {
-    background-color: var(--color-dark) !important;
+    background-color: var(--color-dark) ;
     color: var(--color-white);
     border-radius: 8px;
     padding: 12px 25px;
@@ -78,6 +81,7 @@
 @media (min-width: 768px) {
 
     .hero {
+        max-width: 720px;
         padding-bottom: 0rem !important;
 
         .container {
@@ -134,7 +138,9 @@
 
 @media (min-width: 1400px) { 
     .hero {
+        max-width: 1320px;
         .container {
+            
             grid-template-columns: 2fr 3fr !important;
             grid-template-areas: "headline images"
                 "content images" !important;

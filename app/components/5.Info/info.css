@@ -1,9 +1,10 @@
-.info {
+.Info {
     .container {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
 
+     
         .iphone2 {
             display: none;
         }
@@ -38,8 +39,9 @@
 }
 
 @media (min-width: 768px) { 
-    .info {
-
+    
+    .Info {
+        max-width: 720px;
 
         .container {
             /* display: flex !important; */
@@ -64,13 +66,14 @@
                 font-weight: 800;
             }
     
-            .img {
+            .Image {
     
                 display: flex !important;
                 flex-direction: row !important;
     
                 .iphone1 {
                     height: 400px;
+                    width: 200px;
                 }
     
                 .iphone2 {
@@ -78,7 +81,7 @@
                 }
     
                 .iphone3 {
-                    display: flex !important;
+                    display: flex ;
                 }
     
     
@@ -99,9 +102,9 @@
 }
 
 @media (min-width: 1400px) { 
-    .info {
-
-
+    .Info {
+        max-width: 1320px;
+        padding-bottom: 5rem;
         .container {
             padding-top: 85rex;
 
@@ -114,7 +117,7 @@
 
             .desktop {
                 display: block !important;
-                padding-top: 9rem;
+               
             }
 
             .tablet {
@@ -130,29 +133,29 @@
 
             }
 
-            .img {
+            .Image {
 
                 display: flex !important;
                 flex-direction: row !important;
 
 
                 .iphone1 {
-                    width: 120%;
-                    height: 120%;
-                    padding-right: 2rem;
-                    padding-left: 2rem;
+                    width: 200%;
+                    height: 40rem;
+                    padding-right: 5rem;
+                    padding-left: 5rem;
                 }
 
                 .iphone2 {
                     display: flex !important;
                     width: 120%;
-                    height: 120%;
+                    height: 40rem;
                 }
 
                 .iphone3 {
                     display: flex !important;
                     width: 120%;
-                    height: 120%;
+                    height: 40rem;
                 }
 
 
