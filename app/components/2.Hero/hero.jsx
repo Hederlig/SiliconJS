@@ -21,8 +21,8 @@ export default function Hero() {
                         <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your
                             pocket.</p>
                         <div className="buttons">
-                            <a className="btn-downloadapp" href="#"><Image src={Appstore} /></a>
-                            <a className="btn-downloadapp" href="#"><Image src={Googleplay} /></a>
+                            <a className="btn-downloadapp" href="#"><Image src={Appstore} alt="" /></a>
+                            <a className="btn-downloadapp" href="#"><Image src={Googleplay} alt="" /></a>
                         </div>
 
                         <a className="discover-more" href="#">
