@@ -105,6 +105,8 @@
     .Info {
         max-width: 1320px;
         padding-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
         .container {
             padding-top: 85rex;
 

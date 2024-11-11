@@ -1,16 +1,19 @@
-.factdetail {
+.Facedetail {
     display: none;
 }
 
 @media (min-width: 768px) { 
-    .factdetail {
+    .Facedetail {
         display: none;
     }
 }
 
-@media (min-width: 1400px) { 
-    .factdetail {
-
+@media (min-width: 1400px) {
+     
+    .Facedetail {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1320px;
         display: grid !important;
 
 
@@ -61,12 +64,15 @@
                     border-radius: 8px;
                     padding: 12px 25px;
                     display: flex !important;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     align-items: center;
                     text-decoration: none;
                     border: none;
                 }
-
+                   .arrow {
+                        height: 19px;
+                        padding-left: 9px;
+                    }
                 .button:hover {
                     background-color: var(--color-gray);
                     color: var(--color-white);
@@ -95,8 +101,8 @@
                     }
 
                     .img-front {
-                        padding-top: 7rem;
-                        padding-left: 8rem;
+                        margin-top: 7rem;
+                        margin-left: 8.5rem;
                         position: absolute;
                     }
                 }
@@ -122,6 +128,8 @@
                         padding-bottom: 2rem;
                         position: absolute;
                         margin-left: 2rem;
+                        height: auto;
+                        width: auto;
 
                     }
 
@@ -130,8 +138,8 @@
                         padding-bottom: 2rem;
                         margin-left: 18rem;
                         position: absolute;
-
-
+                        height: auto;
+                        width: auto;
                     }
 
                     .text {
@@ -163,6 +171,8 @@
                         border: none;
                         width: 10rem;
 
+                        
+
                     }
 
                     .button:hover {
@@ -176,6 +186,11 @@
                         padding-left: 15px;
                         justify-content: center;
                         align-items: center;
+                    }
+
+                    .arrow {
+                        height: 19px;
+                        padding-left: 9px;
                     }
 
 
