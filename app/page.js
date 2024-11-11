@@ -4,6 +4,7 @@ import Brands from "./components/3.Brands/brand";
 import Features from "./components/4.Features/features";
 import Info from "./components/5.Info/info";
 import Facedetail from "./components/6.Factdetail/facedetail";
+import Reviews from "./components/7.Reviews/reviews";
 import "./globals.css";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
     < Features />
     < Info />
     < Facedetail />
+    < Reviews />
     </>
   );
 };
