@@ -6,6 +6,7 @@ import Info from "./components/5.Info/info";
 import Facedetail from "./components/6.Factdetail/facedetail";
 import Reviews from "./components/7.Reviews/reviews";
 import Faq from "./components/8.Faq/faq";
+import Subscribe from "./components/9.Subscribe/subscribe";
 import "./globals.css";
 
 
@@ -20,6 +21,7 @@ export default function Home() {
     < Facedetail />
     < Reviews />
     < Faq />
+    < Subscribe />
     </>
   );
 };

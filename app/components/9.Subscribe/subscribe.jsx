@@ -1,12 +1,17 @@
+import Image from "next/image";
+import Notification from "./images/notification.svg";
+import "./subscribe.css"
+
 export default function Subscribe() {
   return (
     <div className="Subscribe">
-      <div className="container">
-        <img src="images/notification.svg"></img>
-        <h1>Subscribe to our newsletter to stay <br>informed about latest updates</br></h1>
+      <div className="container">       
+
+        <h1 className="mobile"> <Image src={Notification} alt="" /> Subscribe to our newsletter </h1>
+        
         <div className="subtext">
           <input className="textfield" placeholder="Your Email" id="email"></input>
-          <button className="subbutton" onclick="alert('Not working')">Subscribe</button>
+          <button className="subbutton">Subscribe</button>
         </div>
       </div>
     </div>
