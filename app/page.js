@@ -1,4 +1,5 @@
 import Header from "./components/1.Header/header";
+import Footer from "./components/10.Footer/footer";
 import Hero from "./components/2.Hero/hero";
 import Brands from "./components/3.Brands/brand";
 import Features from "./components/4.Features/features";
@@ -22,6 +23,7 @@ export default function Home() {
     < Reviews />
     < Faq />
     < Subscribe />
+    < Footer />
     </>
   );
 };
