@@ -83,7 +83,7 @@
 @media (min-width: 1400px) { 
     .Subscribe {
         max-width: 1320px;
-
+        margin-left: 10rem;
         display: flex;
         flex-direction: row;
         align-items: center;

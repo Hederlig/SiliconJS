@@ -2,87 +2,68 @@
     display: none;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .Reviews {
         display: none;
     }
 }
 
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
     .Reviews {
-        display: block !important;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
         margin-top: 15rem;
         background-color: var(--color-gray100);
+        max-width: 1320px;
+        margin-left: 5rem;
 
-        .container {
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            padding-left: 5rem;
+        }
+
+
+        .text {
+            height: auto;
+            width: auto;
+        }
+
+        .cards {
             display: flex;
-            flex-direction: row;
 
-            h1 {
+        }
 
-                font-size: 40px;
+        .users {
+            gap: 20px;
+            display: flex;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            width: 50rem;
+            margin-left: 7rem;
+
+            background-color: var(--color-white);
+
+            .star {
+                padding-bottom: 1rem;
+            }
+
+            .profil {
+                display: flex !important;
+                flex-direction: row;
+            }
+
+            .name {
+                font-size: 18;
                 font-weight: 800;
             }
 
-            p {}
-
-            .quote {
-                position: absolute;
-                padding-left: 53rem;
-                height: auto;
-                width: auto;
-
-            }
-
-            .quote1 {
-                position: absolute;
-                padding-left: 25rem;
-                height: auto;
-                width: auto;
-            }
-
-            .users {
-                padding-top: 2rem;
-                margin-top: 2rem;
-                width: 21rem;
-
-                margin-left: 7rem;
-                background-color: var(--color-white);
-
-                .star {
-                    padding-bottom: 1rem;
-                    height: auto;
-                    width: auto;
-                }
-
-                .text {
-                    font-size: 18;
-
-                }
-
-                h5 {
-                    font-size: 18;
-
-                }
-
-
-                .profil {
-                    display: flex !important;
-                    flex-direction: row;
-                }
-
-                .name {
-                    font-size: 18;
-                    font-weight: 800;
-                }
-
-                .work {
-
-                    color: var(--color-gray);
-                }
-
+            .work {
+                color: var(--color-gray);
             }
 
         }
+
     }
 }
