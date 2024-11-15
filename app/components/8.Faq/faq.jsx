@@ -25,7 +25,6 @@ export default function Faq() {
                     <p>Don't like phone calls?</p>
                     <button className="chatbtn">Contact us <FontAwesomeIcon className="arrowRight" icon={faArrowRight} /></button>
                 </span>
-
             </div>
             <div className="accordion">
                 <details>
