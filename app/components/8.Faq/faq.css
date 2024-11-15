@@ -60,7 +60,7 @@
 
         p {
             font-size: 14px;
-            padding-top: 2rem;
+            margin-top: 1rem;
             color: var(--color-gray);
         }
 
@@ -277,7 +277,7 @@
             flex-grow: 1;
 
             details {
-                padding-bottom: 2rem;
+                padding-bottom: 1rem;
                 max-width: 50rem;
             }
 

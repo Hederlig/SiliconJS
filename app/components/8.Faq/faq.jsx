@@ -1,15 +1,28 @@
+"use client";
 import Image from "next/image";
 import Chat from "./images/chat.svg"
 import Phone from "./images/phone.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+
 import "./faq.css"
+import AccordionItem from "./components/Accordionitem";
+import { useEffect, useState } from "react";
 
 export default function Faq() {
+    const [accordion, setAccordion] = useState([])
+
+    const fetchAccordion = async () => {
+        const res = await fetch("https://win24-assignment.azurewebsites.net/api/faq")
+        const data = await res.json()
+        setAccordion(data)
+    }
+    useEffect(() => {
+        fetchAccordion()
+    }, []);
+
     return (
         <div className="Faq">
-
             <div className="info">
                 <h1>Any questions? Check out the FAQs</h1>
                 <h5 >Still have unanswered questions and need to get in touch?</h5>
@@ -27,61 +40,14 @@ export default function Faq() {
                 </span>
             </div>
             <div className="accordion">
-                <details>
-                    <summary className="accordion-1"><h5>Is any of my personal information stored in the App? </h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} /></summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-                    </p>
-                </details>
-                <details>
-                    <summary><h5>What formats can I download my transaction history in?</h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} /></summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </details>
-                <details>
-                    <summary><h5>Can I schedule future transfers?</h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} /></summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </details>
-                <details>
-                    <summary><h5>When can I use Banking App services?</h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} />
-                    </summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </details>
-                <details>
-                    <summary><h5>Can I create my own password that is easy for me to remember?</h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} /></summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </details>
-                <details>
-                    <summary><h5>What happens if I forget or lose my password?</h5><FontAwesomeIcon className="arrowDown" icon={faArrowDown} /></summary>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-                        viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-                        velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-                        scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                        egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </details>
-                <div className="containerbutton">
-                    <button className="button">Contact us now</button>
-                </div>
-            </div>
 
+                {
+                    accordion.map(item => (
+                        <AccordionItem key={item.id} item={item} />
+                    ))
+                }
+
+            </div>
         </div>
     );
 }
