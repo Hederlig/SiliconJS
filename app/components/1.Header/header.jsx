@@ -13,7 +13,7 @@ export default function Header() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
-        
+
         const storedThemeMode = localStorage.getItem("themeMode");
 
         if (storedThemeMode === "dark" || (!storedThemeMode && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -44,7 +44,6 @@ export default function Header() {
             <div className="container">
                 <Link className="logo" href="index.html">
                     <Image src={Loga} alt="Silicon Logotype" width={47} height={44} />
-
                 </Link>
 
                 <nav className="navbar">
