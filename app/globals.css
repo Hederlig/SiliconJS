@@ -5,13 +5,63 @@
   --color-dark: #0B0F19;
   --color-primary: #6366F1;
   --color-gray: #9397AD;
+  --color-dark-gray: #33354D;
   --color-lightgray: #E2E5F1;
   --color-white: #FFFFFF;
   --color-gray100: #F3F6FF;
   --container-padding: 1rem;
   --transition-time: all 0.2s;
+ 
+   .discover-more {
+    color: var(--color-black);
+  }
 }
+.hero {
+  background: rgb(99, 102, 241);
+  background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+}
+.dark {
+  background-color:var(--color-dark);
+  h1 {
+    color: var(--color-white);
 
+    font-weight: 800;
+  }
+  p {
+    color: var(--color-gray);
+  }
+  .discover-more {
+    color: var(--color-gray);
+  }
+
+  img {
+    color: var(--color-gray);
+  }
+  .Reviews {
+    background-color: var(--color-dark);
+    .users{
+      background-color: var(--color-dark);
+    }
+  }
+  h5 {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .accordion {
+
+    summary{
+      border-style: solid;
+      border-color: #33354D;
+    }
+    
+  }
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+}
 .wrapper {
   display: grid;
   grid-template-rows: auto 1fr auto;

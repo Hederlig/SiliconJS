@@ -1,12 +1,12 @@
 import StarRating from "./StarRating";
 import Image from "next/image";
-
+import Quotes from "./images/quotes.svg"
 
 export default function Clients({item}) {
   return (
    
     <div >
-      {/* <Image className="quote1" src={Quotes} alt="" /> */}
+       <Image className="quote1" src={Quotes} alt="" />
         <StarRating starRating={item.starRating} />
         <p className="text">{item.comment}</p>
         <span className="profil">

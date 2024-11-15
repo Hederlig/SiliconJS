@@ -23,7 +23,7 @@ export default function Features() {
                     </div>
                     <div id="services">
                         <div id="services-1" className="services">
-                            <Image src={Payment}a alt="" />
+                            <Image src={Payment} alt="" />
                             <h1>Easy Payments</h1>
                             <p>Id mollis consectetur congue egestas
                                 egestas suspendisse blandit justo.</p>

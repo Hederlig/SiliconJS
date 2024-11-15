@@ -1,6 +1,4 @@
 "use client";
-import Quotes from "./images/quotes.svg"
-
 import "./reviews.css"
 import Clients from "./components/Clients";
 import { useState, useEffect } from "react";
@@ -31,8 +29,7 @@ export default function Reviews() {
             testimonials.map((testimoniall) => (
               <Clients key={testimoniall.id} item={(testimoniall)} />
             ))
-          }
-  
+          }  
            </div>
       </div>
     </div>

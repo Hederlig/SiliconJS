@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 
+
 import "./hero.css"
 
 export default function Hero() {
@@ -21,8 +22,8 @@ export default function Hero() {
                         <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your
                             pocket.</p>
                         <div className="buttons">
-                            <a className="btn-downloadapp" href="#"><Image src={Appstore} alt="" /></a>
-                            <a className="btn-downloadapp" href="#"><Image src={Googleplay} alt="" /></a>
+                            <a className="btn-downloadapp" href="#"><Image src={Appstore} alt="Appstore" /></a>
+                            <a className="btn-downloadapp" href="#"><Image src={Googleplay} alt="Googleplay" /></a>
                         </div>
 
                         <a className="discover-more" href="#">

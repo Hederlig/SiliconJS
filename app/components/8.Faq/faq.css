@@ -206,16 +206,8 @@
         grid-template-areas: "info accordion"
             "tele accordion" !important;
 
-        h5 {
-            font-size: 18px;
-            font-weight: normal;
-        }
 
-        h1 {
-            font-size: 32px;
-            font-weight: 800;
 
-        }
 
         .info {
             display: grid !important;
@@ -234,6 +226,7 @@
 
             .tele {
                 .call {
+                    gap: 5%;
                     padding-right: 5rem;
 
                     .phoneIcon {
@@ -282,7 +275,7 @@
             flex-grow: 1;
 
             details {
-                padding-bottom: 4rem;
+                padding-bottom: 2rem;
                 max-width: 50rem;
             }
 
@@ -290,7 +283,7 @@
                 display: grid;
                 grid-template-columns: auto 1fr;
                 justify-items: end;
-
+                align-items: center;
                 max-width: 50rem;
 
                 font-size: 16px;
@@ -298,18 +291,17 @@
                 font-weight: 800;
             }
 
-            p {
-                font-size: 14px;
-                padding-top: 2rem;
-                color: var(--color-gray);
-            }
-
-
-
-
             .arrowDown {
-                height: 15px;
+                height: 20px;
+                display: flex;
+                color: var(--color-primary);
+                padding-right: 2rem;
             }
+
+
+
+
+
 
             .accordion-open .arrowDown {
                 transform: rotate(180deg);
